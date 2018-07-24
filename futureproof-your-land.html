@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Waimapu Story</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+
+
+    <!-- Header
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1><span id="shadow">Waimapu Sub-Catchment</span></h1>
+            <h3><span id="shadow">Stories about the Waimapu sub-catchment</span></h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>  -->
+
+    <!-- About -->
+    <section >
+        <div class="container">
+            <div class="row text-center">
+				<h2>Futureproof Your Land</h2>
+                <div class="col-lg-12 text-left lead"> 
+                    <hr class="small">
+                    <p>Soil has been, and continues to be lost from the sub-catchment at moderate to high rates, especially where steep land is subject to cattle or deer grazing, or where earthworks (such as subdivision 
+					and roading) are not carefully managed. Soil loss into the waterways results in increased levels of sedimentation into our waterways and estuaries.</p>
+                    <p>Sedimentation is the build-up or settling of sediment.  Sediment is soil transported by wind or water.  Sediment can be small particles of rock, shells, silt, mud, vegetation and other material. 
+					It has been measured that 1000 times more sediment comes from a bare patch of disturbed land (such as earthworks) than from a forested area. Less vegetation cover means more sediment will get into our 
+					waterways.</p>
+					<p>Water quality is also degraded by excess nutrients in streams from fertilisers, farm runoff and urine patch leaching. These and pollutants are generally unintentional by-products of activities such 
+					as farming and construction.</p>
+					<div class="container">
+						<div class="col-lg-12 text-center lead"> 
+							<h3>Priority 1</h3>
+							<p>Regional Council is working with landowners to reduce sedimentation, from entering the water ways and estuary.</p>
+							<h3>Priority 2</h3>
+							<p>Regional Council is working with landowners to mitigate risks to water way and harbour water quality.</p>
+						</div>
+					</div>
+					<hr class="small">
+					<ul class="list-unstyled">
+						<li>We do this by providing funding and practical advice to help landowners on:</li>
+							<ul>
+								<li>Fencing and planting riparian margins to exclude stock and protect water quality.</li>
+								<li>Install stock stream crossings, such as bridges, to protect the water quality of streams.</li>
+								<li>Retire steep erodible land.</li>
+								<li>Protecting existing wetlands, native forest remnants and other areas of indigenous biodiversity.</li>	  
+							</ul>
+					</ul>
+							
+				<div class="col-lg-12 text-left"> 
+					<p><em>As at 30 June 2016, 289.1 km out of a total of 472 km of water way margins has been fenced in the Waimapu sub-catchment.</em></p>
+					<p><em>Between 2012 and 2016, we have established 28 new management plans with landowners in the Waimpau sub-catchment whose properties were at risk from erosion. These plans have resulted in 
+						changes in land use resulting in 85.4 hectares where stock has been removed, new fencing installed, and native species have been replanted.</em></p>
+					
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="lead">
+						
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+   
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    
+    </script>
+
+</body>
+
+</html>
